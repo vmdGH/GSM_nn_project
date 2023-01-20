@@ -8,7 +8,7 @@ from PIL import Image
 
 
 # делаем словарь, чтобы по индексу найти название класса
-labels = json.load(open('https://github.com/vmdGH/GSM_nn_project/blob/main/streamlit/pages/imagenet_class_index.json'))
+labels = json.load(open('imagenet_class_index.json'))
 # функция декодировки
 decode = lambda x: labels[str(x)][1]
 print('ok_1')
